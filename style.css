@@ -1,0 +1,257 @@
+/** @format */
+
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.926);
+  color: rgba(255, 255, 255, 0.798);
+  font-family: "Fira Mono", monospace;
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 50rem;
+    margin: auto;
+  }
+}
+
+.logo {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  border-radius: 50%;
+  width: 15%;
+}
+
+.logo-name {
+  font-size: 30px;
+  font-weight: 700;
+  color: oklch(0.686283 0.185567 148.959);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: "Fira Mono", monospace;
+  cursor: pointer;
+  padding-bottom: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.771);
+}
+
+nav div {
+  padding: 0.7rem;
+}
+
+nav div:hover {
+  background-color: rgba(128, 128, 128, 0.465);
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+@media (min-width: 1000px) {
+  nav {
+    margin-bottom: 3rem;
+  }
+}
+
+.intro span {
+  color: oklch(0.686283 0.185567 148.959);
+}
+
+.intro {
+  font-family: "Fira Mono", monospace;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.description {
+  margin-top: 2rem;
+  font-size: 20px;
+  font-weight: 400;
+  color: oklch(0.837682 0.001658 17.9116 / 0.8);
+}
+
+@media (min-width: 768px) {
+  .description {
+    margin-top: 4rem;
+  }
+
+  header {
+  }
+}
+
+/* *{
+  outline: 1px solid red;
+} */
+
+.container {
+  width: 100%;
+  padding: 10px;
+}
+.container {
+  padding-right: calc(10% - 30px);
+}
+main.row {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-column-gap: 20px;
+}
+.col header.title {
+  font-family: helvetica;
+  color: #11a372;
+  padding: 0px 0px 20px 30px;
+}
+.col .contents {
+  padding: 0px 30px;
+  /* border-left: 2px solid #bababa; */
+  border-left: 2px solid green;
+}
+.col .contents .box {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  background-color: #1d1d1d;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 20px;
+  color: white;
+}
+.col .contents .box:hover {
+  box-shadow: 0px 3px 12px 0px #ccc;
+  border: 1px solid transparent;
+}
+.col .contents .box::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 22px);
+  top: 0;
+  background-color: #11a372;
+  border: 2px solid white;
+}
+.box h4 {
+  position: relative;
+  color: #11a372;
+}
+.box h3 {
+  font-size: 19px;
+  padding: 10px 0px 6px;
+  font-family: helvetica;
+  /* color: #444; */
+  color: rgba(255, 255, 255, 0.761);
+}
+.box p {
+  line-height: 1.2;
+  /* color: #666; */
+  color: rgba(255, 255, 255, 0.513);
+  font-size: 17px;
+}
+@media (max-width: 768px) {
+  main.row {
+    grid-template-columns: 1fr;
+  }
+  .row .col:nth-child(2) {
+    margin-top: 30px;
+  }
+}
+
+.experience-project-btn button {
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  font-family: "Fira Mono", monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: text-decoration 0.2s ease-in-out;
+}
+
+.experience-project-btn button:hover {
+  text-decoration: underline;
+}
+
+.experience-project-btn {
+  width: 20rem;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+#projectSection {
+  background-color: rgba(0, 0, 0, 0.894);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#projectSection div {
+  flex: 1;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+#projectSection img {
+  outline: 1px solid oklch(0.686283 0.185567 148.959);
+  width: 100%;
+  height: 120%;
+}
+.project-description {
+  margin-top: 1rem;
+}
+
+.project-tech-stack {
+  margin-top: 1rem;
+}
+
+.project-tech-stack h4 {
+  margin-bottom: 1rem;
+}
+
+.project-tech-stack span {
+  background-color: oklab(0.27796 -0.034941 0.00530638);
+  color: oklab(0.572729 -0.0963821 -0.00964263);
+  padding: 0.2rem 0.4rem;
+  border-radius: 10px;
+}
+
+footer {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.active{
+  background-color: oklch(0.837682 0.001658 17.9116 / 0.2);
+  border-radius: 15px;
+}
