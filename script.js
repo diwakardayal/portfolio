@@ -1,6 +1,6 @@
 /** @format */
 "use strict";
-const projectSection = document.getElementById("projectSection") || null;
+const projectSection = document.getElementById("projectSectionId") || null;
 const experienceSection = document.getElementById("experienceSection") || null
 
 document.addEventListener("DOMContentLoaded", () => {

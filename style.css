@@ -209,20 +209,18 @@ main.row {
   display: block !important;
 }
 
-#projectSection {
+.projectContainer {
   background-color: rgba(0, 0, 0, 0.894);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
 }
 
-#projectSection div {
-  flex: 1;
+.projectContainer div {
   height: 100%;
   padding: 0.5rem;
 }
 
-#projectSection img {
+.projectContainer img {
   outline: 1px solid oklch(0.686283 0.185567 148.959);
   width: 100%;
   height: 120%;
@@ -251,7 +249,19 @@ footer {
   text-align: center;
 }
 
-.active{
+.active {
   background-color: oklch(0.837682 0.001658 17.9116 / 0.2);
   border-radius: 15px;
 }
+
+.margin-top {
+  margin-top: 30px;
+}
+
+.note{
+  background-color: rgb(168, 168, 0);
+  font-weight: 700;
+  color: black;
+  text-decoration: underline;
+}
+ 
